@@ -1,63 +1,179 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PromMania</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-        <title>PromMania</title>
+<body>
+  <div class="bg">
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+  </div>
 
-        <link rel="stylesheet" href="css/style.css">
+  <header class="navbar glass">
+    <div class="nav-left">
+      <div class="logo-dot" aria-hidden="true"></div>
+      <div class="logo-text">PromMania</div>
+    </div>
 
-    </head>
+    <nav class="nav-links">
+      <a href="catalog.html">Каталог</a>
+      <a href="catalog.html#groups">Группы</a>
+      <a href="catalog.html#sellers">Продавцы</a>
+    </nav>
 
-    <body>
+    <div class="nav-actions">
+      <a class="btn small" href="login.html">Войти</a>
+      <a class="btn primary small" href="catalog.html">Начать</a>
+    </div>
+  </header>
 
-        <div class="bg"></div>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-left reveal">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Marketplace • Smart UI
+        </div>
 
-        <header class="navbar">
-              <h1 class="logo">PromMania</h1>
+        <h1 class="hero-title">
+          Собирай продукты и системы,
+          которые выглядят дорого
+          и работают стабильно.
+        </h1>
 
-                <nav>
-                        <a href="#">Каталог</a>
-                            <a href="#">Группы</a>
-                                <a href="#">Продавцы</a>
-                                    <button class="login">Войти</button>
-                </nav>
-            </header>
+        <p class="hero-sub">
+          PromMania — маркетплейс цифровых продуктов: исходники, боты, шаблоны, гайды и сервисы.
+          Всё в едином премиальном интерфейсе.
+        </p>
 
-            <section class="hero">
+        <div class="hero-actions">
+          <a class="btn primary" href="catalog.html">Открыть каталог</a>
+          <a class="btn" href="login.html">Стать продавцом</a>
+          <button class="btn ghost" id="btnDemo">Посмотреть демо</button>
+        </div>
 
-                  <h2>IT Marketplace нового поколения</h2>
+        <div class="hero-mini">
+          <div class="mini-card glass">
+            <div class="mini-title">SECURE</div>
+            <div class="mini-text">Escrow-сделки, строгая модерация и аудит действий.</div>
+          </div>
+          <div class="mini-card glass">
+            <div class="mini-title">SOCIAL</div>
+            <div class="mini-text">Профили как портфолио + чаты и группы внутри.</div>
+          </div>
+          <div class="mini-card glass">
+            <div class="mini-title">FAST</div>
+            <div class="mini-text">Лёгкие анимации, оптимизация под слабые устройства.</div>
+          </div>
+        </div>
+      </div>
 
-                    <p>
-                            Покупай и продавай ботов, исходники и цифровые продукты
-                                в безопасной экосистеме.
-                    </p>
+      <div class="hero-right reveal">
+        <div class="mock glass tilt" data-tilt>
+          <div class="mock-top">
+            <div class="pill"><span class="mini-dot"></span> Smart UI</div>
+            <div class="pill">v0.1</div>
+          </div>
 
-                      <button class="cta">Начать</button>
+          <div class="mock-body">
+            <div class="row">
+              <div class="item">
+                <div class="item-title">PromMania</div>
+                <div class="item-sub">Marketplace • Prod</div>
+              </div>
+              <div class="tag active">ACTIVE</div>
+            </div>
 
-                </section>
+            <div class="row">
+              <div class="item">
+                <div class="item-title">Bot Panel</div>
+                <div class="item-sub">Dashboard</div>
+              </div>
+              <div class="tag">BETA</div>
+            </div>
 
-                <section class="cards">
+            <div class="row">
+              <div class="item">
+                <div class="item-title">Pin Save Robot</div>
+                <div class="item-sub">Download bot</div>
+              </div>
+              <div class="tag">BUILD</div>
+            </div>
 
-                      <div class="card">
-                            <h3>🔒 Escrow сделки</h3>
-                                <p>Безопасные покупки с защитой средств.</p>
-                      </div>
+            <div class="row">
+              <div class="item">
+                <div class="item-title">Minecraft Tools</div>
+                <div class="item-sub">Automation</div>
+              </div>
+              <div class="tag">STABLE</div>
+            </div>
 
-                        <div class="card">
-                                <h3>💬 Группы</h3>
-                                    <p>Сообщества разработчиков и продавцов.</p>
-                        </div>
+            <div class="mock-footer">
+              <div class="progress">
+                <div class="bar" id="demoBar"></div>
+              </div>
+              <div class="hint">Deploy • Logs • Realtime</div>
+            </div>
+          </div>
+        </div>
 
-                          <div class="card">
-                                <h3>⭐ Рейтинг</h3>
-                                    <p>Честная система доверия.</p>
-                          </div>
+        <div class="availability glass">
+          <div class="availability-title">Доступно для проектов</div>
+          <div class="availability-sub">Веб • UI • Боты • Автоматизация • Маркетплейсы</div>
+        </div>
+      </div>
+    </section>
 
-                        </section>
+    <section class="section reveal">
+      <div class="section-head">
+        <h2>Почему PromMania</h2>
+        <p>Магазин, где покупатель не боится, а продавец выглядит как бренд.</p>
+      </div>
 
-                        <script src="js/app.js"></script>
+      <div class="grid3">
+        <div class="card glass">
+          <div class="card-ico">🛡️</div>
+          <div class="card-title">Anti-scam by design</div>
+          <div class="card-text">Статусы заказа, логирование действий, модерация и строгие правила.</div>
+        </div>
 
-                    </body>
-                    </html>
+        <div class="card glass">
+          <div class="card-ico">🎨</div>
+          <div class="card-title">Профиль как витрина</div>
+          <div class="card-text">Баннер, темы, ссылки, закрепы товаров — как портфолио.</div>
+        </div>
+
+        <div class="card glass">
+          <div class="card-ico">💬</div>
+          <div class="card-title">Чаты и группы</div>
+          <div class="card-text">Личные чаты по заказу и сообщества продавцов внутри платформы.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer reveal">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="logo-dot" aria-hidden="true"></span>
+          <span>PromMania</span>
+        </div>
+        <div class="footer-sub">© 2026 • Прототип интерфейса • Veyro ecosystem</div>
+      </div>
+
+      <div class="footer-right">
+        <a href="login.html">Войти</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="#">Правила</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
